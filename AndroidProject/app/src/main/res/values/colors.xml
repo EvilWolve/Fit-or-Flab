@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3e3e3e</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#787878</color>
+    <color name="colorBasicText">#FFFFFF</color>
+    <color name="colorBackground">#333333</color>
+
+    <color name="sectionWeight">#3436ab</color>
+    <color name="sectionYoga">#8f39ff</color>
+    <color name="sectionCardio">#ab4343</color>
+</resources>
