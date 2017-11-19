@@ -1,5 +1,6 @@
 package com.udemy.wolf.fitorflab;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -7,7 +8,9 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 
 @EActivity
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
+    public static final String EXTRA_ITEM_TITLE = "extra.item.title";
 
     public static final String EXERCISE_WEIGHTS = "Weight lifting";
     public static final String EXERCISE_YOGA = "Yoga";
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadDetailActivity(String exerciseTitle)
     {
-
+        Intent intent = new Intent(MainActivity.this, DetailsActivity_.class);
+        intent.putExtra(MainActivity.EXTRA_ITEM_TITLE, exerciseTitle);
+        startActivity(intent);
     }
 }

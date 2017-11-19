@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBG"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/sectionWeight"
+    android:orientation="vertical"
     tools:context="com.udemy.wolf.fitorflab.DetailsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/headerTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight Lifting"
+        android:textAlignment="center"
+        android:textColor="@color/colorBasicText"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/mainImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/weight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#20000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/completeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Mark it complete!"
+            android:textAlignment="center"
+            android:textColor="@color/colorBasicText"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/taskList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp">
+
+            <CheckBox
+                android:id="@+id/taskCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/colorBasicText"
+                android:paddingLeft="15dp"
+                android:text="Complete set 1"
+                android:textColor="@color/colorBasicText" />
+
+            <CheckBox
+                android:id="@+id/taskCheckbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/colorBasicText"
+                android:paddingLeft="15dp"
+                android:text="Complete set 2"
+                android:textColor="@color/colorBasicText" />
+
+            <CheckBox
+                android:id="@+id/taskCheckbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/colorBasicText"
+                android:paddingLeft="15dp"
+                android:text="Complete set 3"
+                android:textColor="@color/colorBasicText" />
+
+            <CheckBox
+                android:id="@+id/taskCheckbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/colorBasicText"
+                android:paddingLeft="15dp"
+                android:text="Complete set 4"
+                android:textColor="@color/colorBasicText" />
+
+            <CheckBox
+                android:id="@+id/taskCheckbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/colorBasicText"
+                android:paddingLeft="15dp"
+                android:text="Complete set 5"
+                android:textColor="@color/colorBasicText" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
